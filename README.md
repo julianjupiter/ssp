@@ -1,2 +1,2 @@
-# sss
+# ssp
 Simple Subscription Platform

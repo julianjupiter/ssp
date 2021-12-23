@@ -28,6 +28,7 @@ class PostController extends Controller
             $post->save();
             PostPublished::dispatch($post);
         } catch (Exception $exception) {
+            var_dump($exception->getMessage());
             return response()->json(['status' => 'FAILED'], 500);
         }
 
